@@ -8,7 +8,8 @@ export const AuthProvider = ({ children }) => {
   const [services, setServices] = useState("");
   const authorizationToken = `Bearer ${token}`;
 
-  const serverlink = "http://localhost:5000/";
+  //const serverlink = "http://localhost:5000/";
+  const serverlink = "https://gold-pay-web.vercel.app/";
 
   //const serverlink = "https://server.yo-pal.in/";
 
