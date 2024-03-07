@@ -41,10 +41,10 @@ app.get("/login", (req, res) => {
 
 app.use(errorMiddleware);
 
-const PORT = 5000;
+const PORT = 7860;
 
 connectDb().then(() => {
   app.listen(PORT, () => {
-    console.log(`Server is running at port 5000`);
+    console.log(`Server is running at port 7860`);
   });
 });
