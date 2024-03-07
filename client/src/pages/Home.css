@@ -1,0 +1,15 @@
+
+
+.buy-send-swap{
+height: 5rem;;
+padding: 4rem;
+padding-top: 10rem;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #FFC000;
+   height: fit-content;
+   gap: 2rem;
+}
+

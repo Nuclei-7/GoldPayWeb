@@ -1,0 +1,133 @@
+
+.card{
+    background: rgb(249, 234, 237);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.metals, .trade-type{
+    background: silver;
+    display: flex;
+    align-items: center;
+    width: 17%;
+    
+    box-shadow: 5px 5px 10px #888888;
+    
+    
+
+}
+
+.form-group{
+    
+       width: 20%;
+       
+}
+
+
+
+label{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    transition: all 300ms ease;
+    
+    
+}
+
+section{
+    border-radius: 40px;
+    overflow:hidden;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked+label{
+    /* Your styles for checked radio labels here */
+    background: gold;
+    color: white;
+    /* Change the text color to blue as an example */
+}
+
+#gold:checked~ .goldInput{
+    display: none;
+}
+
+
+
+/* Toggle Styles */
+.toggle-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+}
+
+.toggle-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Checkcross Styles */
+.checkcross .check {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    position: absolute;
+    background: #8BC34A;
+    transition: 0.4s ease;
+    top: 4.5px;
+    left: 4.5px;
+}
+
+.checkcross .check::before,
+.checkcross .check::after {
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.checkcross .check::before {
+    width: 25px;
+    transform: rotate(-45deg) translate(-6px, 20px);
+}
+
+.checkcross .check::after {
+    width: 10px;
+    transform: rotate(45deg) translate(20px, 11px);
+}
+
+#checkcross:checked+label .check {
+    left: 68px;
+    transform: rotate(360deg);
+    background: #c34a4a;
+}
+
+#checkcross:checked+label .check::before {
+    width: 27px;
+    transform: rotate(-45deg) translate(-8px, 18px);
+}
+
+#checkcross:checked+label .check::after {
+    width: 27px;
+    transform: rotate(45deg) translate(18px, 8px);
+}
+
+/* Name Styles */
+.name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
