@@ -14,7 +14,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const walletRoute = require('./router/wallet-router');
 
 const corsOptions = {
-  origin: "https://gold-pay-web-urg8.vercel.app",
+  origin: "*",
   
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
