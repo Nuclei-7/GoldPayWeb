@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const authorizationToken = `Bearer ${token}`;
 
   //const serverlink = "http://localhost:5000/";
-  const serverlink = "https://gold-pay-web.vercel.app/";
+  const serverlink = "https://goldpayweb.onrender.com/";
 
   //const serverlink = "https://server.yo-pal.in/";
 
